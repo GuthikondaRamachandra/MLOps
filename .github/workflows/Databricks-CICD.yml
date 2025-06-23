@@ -72,7 +72,7 @@ jobs:
     # Checkout code
     steps:
     - name: Checkout code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
 
     # Show the environment variables for debugging
     - name: Display Environment Variable
@@ -84,42 +84,42 @@ jobs:
 
     # Publish Artifact: ARM-Templates
     - name: 'Publish Artifact: ARM-Templates' 
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: 'ARM-Templates'
         path: '${{ github.workspace }}/ARM-Templates'
 
     # Publish Artifact: Databricks-Clusters
     - name: 'Publish Artifact: Databricks-Clusters' 
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: 'clusters'
         path: '${{ github.workspace }}/clusters'
 
     # Publish Artifact: Databricks-Notebooks
     - name: 'Publish Artifact: Databricks-Notebooks' 
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: 'notebooks'
         path: '${{ github.workspace }}/notebooks'
 
     # Publish Artifact: Databricks-Jobs
     - name: 'Publish Artifact: Databricks-Jobs' 
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: 'jobs'
         path: '${{ github.workspace }}/jobs'
 
     # Publish Artifact: Databricks-Init-Scripts
     - name: 'Publish Artifact: Databricks-Init-Scripts' 
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: 'init-scripts'
         path: '${{ github.workspace }}/init-scripts'
 
     # Publish Artifact: Databricks-Deployment-Scripts
     - name: 'Publish Artifact: Databricks-Deployment-Scripts' 
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: 'deployment-scripts'
         path: '${{ github.workspace }}/deployment-scripts'                                
@@ -149,42 +149,42 @@ jobs:
 
     # Download Artifact: ARM-Templates
     - name: 'Download Artifact: ARM-Templates' 
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v4
       with:
         name: 'ARM-Templates'
         path: ${{ github.workspace }}/ARM-Templates
 
     # Download Artifact: Databricks-Clusters
     - name: 'Download Artifact: Databricks-Clusters' 
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v4
       with:
         name: 'clusters'
         path: ${{ github.workspace }}/clusters
 
     # Download Artifact: Databricks-Notebooks
     - name: 'Download Artifact: Databricks-Notebooks' 
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v4
       with:
         name: 'notebooks'
         path: ${{ github.workspace }}/notebooks
 
     # Download Artifact: Databricks-Jobs
     - name: 'Download Artifact: Databricks-Jobs' 
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v4
       with:
         name: 'jobs'
         path: ${{ github.workspace }}/jobs
 
     # Download Artifact: Databricks-Init-Scripts
     - name: 'Download Artifact: Databricks-Init-Scripts' 
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v4
       with:
         name: 'init-scripts'
         path: ${{ github.workspace }}/init-scripts
 
     # Download Artifact: Deployment Scripts
     - name: 'Download Artifact: Deployment Scripts' 
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v4
       with:
         name: 'deployment-scripts'
         path: ${{ github.workspace }}/deployment-scripts
@@ -278,42 +278,42 @@ jobs:
 
     # Download Artifact: ARM-Templates
     - name: 'Download Artifact: ARM-Templates' 
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v4
       with:
         name: 'ARM-Templates'
         path: ${{ github.workspace }}/ARM-Templates
 
     # Download Artifact: Databricks-Clusters
     - name: 'Download Artifact: Databricks-Clusters' 
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v4
       with:
         name: 'clusters'
         path: ${{ github.workspace }}/clusters
 
     # Download Artifact: Databricks-Notebooks
     - name: 'Download Artifact: Databricks-Notebooks' 
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v4
       with:
         name: 'notebooks'
         path: ${{ github.workspace }}/notebooks
 
     # Download Artifact: Databricks-Jobs
     - name: 'Download Artifact: Databricks-Jobs' 
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v4
       with:
         name: 'jobs'
         path: ${{ github.workspace }}/jobs
 
     # Download Artifact: Databricks-Init-Scripts
     - name: 'Download Artifact: Databricks-Init-Scripts' 
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v4
       with:
         name: 'init-scripts'
         path: ${{ github.workspace }}/init-scripts
 
     # Download Artifact: Deployment Scripts
     - name: 'Download Artifact: Deployment Scripts' 
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v4
       with:
         name: 'deployment-scripts'
         path: ${{ github.workspace }}/deployment-scripts
@@ -407,42 +407,42 @@ jobs:
 
     # Download Artifact: ARM-Templates
     - name: 'Download Artifact: ARM-Templates' 
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v4
       with:
         name: 'ARM-Templates'
         path: ${{ github.workspace }}/ARM-Templates
 
     # Download Artifact: Databricks-Clusters
     - name: 'Download Artifact: Databricks-Clusters' 
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v4
       with:
         name: 'clusters'
         path: ${{ github.workspace }}/clusters
 
     # Download Artifact: Databricks-Notebooks
     - name: 'Download Artifact: Databricks-Notebooks' 
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v4
       with:
         name: 'notebooks'
         path: ${{ github.workspace }}/notebooks
 
     # Download Artifact: Databricks-Jobs
     - name: 'Download Artifact: Databricks-Jobs' 
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v4
       with:
         name: 'jobs'
         path: ${{ github.workspace }}/jobs
 
     # Download Artifact: Databricks-Init-Scripts
     - name: 'Download Artifact: Databricks-Init-Scripts' 
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v4
       with:
         name: 'init-scripts'
         path: ${{ github.workspace }}/init-scripts
 
     # Download Artifact: Deployment Scripts
     - name: 'Download Artifact: Deployment Scripts' 
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v4
       with:
         name: 'deployment-scripts'
         path: ${{ github.workspace }}/deployment-scripts
