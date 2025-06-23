@@ -13,7 +13,6 @@ run_id='c9830cb0281842eb85cbb0dd9c14d896'
 # The default path where the MLflow autologging function stores the model
 artifact_path = "model"
 model_uri = "runs:/{run_id}/{artifact_path}".format(run_id=run_id, artifact_path=artifact_path)
-
 model_production_uri = "models:/{model_name}/{model_stage}".format(model_name=model_name,model_stage=dbutils.widgets.get("Model Stage"))
 
 
