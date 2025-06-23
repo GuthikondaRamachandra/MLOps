@@ -45,7 +45,7 @@ on:
       KEY_VAULT_NAME:
         description: 'KeyVault name'
         required: true
-        default: 'KeyVault-MyProject7'
+        default: 'KeyVault-MyProject'
 
       # This is a KeyVault for holding the Service Principal to make Databricks API calls and to hold Databricks KeyVault backed Secrets
       SUBSCRIPTION_ID:
@@ -134,7 +134,7 @@ jobs:
     env:
       resourceGroupName: 'Databricks-MyProject-RG-Dev'
       databricksWorkspaceName: 'Databricks-MyProject-RG-Dev'
-      keyVaultName: 'KeyVault-MyProject7-Dev'
+      keyVaultName: 'KeyVault-MyProject-Dev'
       NotebookDeploymentPath: '/MyProject'
       GitNotebookPath: 'notebooks/MyProject'
 
@@ -220,7 +220,7 @@ jobs:
         ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
       #if: ${{ github.event.inputs.MODE == 'Databricks' }}
       with:
-        keyvault: 'KeyVault-MyProject7-Dev'
+        keyvault: 'KeyVault-MyProject-Dev'
         secrets: 'databricks-dev-ops-subscription-id,databricks-dev-ops-tenant-id,databricks-dev-ops-client-id,databricks-dev-ops-client-secret'
       id: databricksSecretAction
 
@@ -263,7 +263,7 @@ jobs:
     env:
       resourceGroupName: 'Databricks-MyProject-RG-QA'
       databricksWorkspaceName: 'Databricks-MyProject-RG-QA'
-      keyVaultName: 'KeyVault-MyProject7-QA'
+      keyVaultName: 'KeyVault-MyProject-QA'
       NotebookDeploymentPath: '/MyProject'
       GitNotebookPath: 'notebooks/MyProject'
 
@@ -392,7 +392,7 @@ jobs:
     env:
       resourceGroupName: 'Databricks-MyProject-RG-Prod'
       databricksWorkspaceName: 'Databricks-MyProject-RG-Prod'
-      keyVaultName: 'KeyVault-MyProject7-Prod'
+      keyVaultName: 'KeyVault-MyProject-Prod'
       NotebookDeploymentPath: '/MyProject'
       GitNotebookPath: 'notebooks/MyProject'
 
